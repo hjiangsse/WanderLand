@@ -1,0 +1,38 @@
+Welcome to the Emacs shell
+
+~/WanderLand/tao_of_bash $ 
+~/WanderLand/tao_of_bash $ 
+~/WanderLand/tao_of_bash $ 
+~/WanderLand/tao_of_bash $ 
+~/WanderLand/tao_of_bash $ ls -l
+total 0
+-rw-r--r--   1 pi             pi       72 2020-12-09 13:35 test.txt
+~/WanderLand/tao_of_bash $ sed '/header/{n; d}' test.txt 
+This is the header line
+This is the middle line
+
+This is the last line
+~/WanderLand/tao_of_bash $ sed '/first/{N; s/\n/ /}' test.txt
+~/WanderLand/tao_of_bash $ sed 'N; s/System Administrator/Desktop User/' test.txt
+This is the header line
+This is the first data line
+This is the second data line
+This is the last line
+
+On Tuesday, the Linux System
+Administrator's group meeting will be held.
+All System Adiministrators should be attend.
+Thank you for your attendance.
+~/WanderLand/tao_of_bash $ 
+~/WanderLand/tao_of_bash $ 
+~/WanderLand/tao_of_bash $ sed 'N; s/System.Administrator/Desktop User/' test.txt
+This is the header line
+This is the first data line
+This is the second data line
+This is the last line
+
+On Tuesday, the Linux System
+Administrator's group meeting will be held.
+All System Adiministrators should be attend.
+Thank you for your attendance.
+~/WanderLand/tao_of_bash $ sed 'N; s/System.Administrator/Desktop User/' test.txt
