@@ -1,0 +1,26 @@
+CPPFLAGS = -I include
+vpath %.c src
+vpath %.l src
+vpath %.h include
+
+CC = clang
+RM = rm
+
+words_count: words_count.o counter.o lexer.o -lfl
+	$(CC) $(CPPFLAGS) $^ -o $@
+
+words_count.o: words_count.c counter.h
+	$(CC) $(CPPFLAGS) -c $<
+
+counter.o: counter.c counter.h lexer.h
+	$(CC) $(CPPFLAGS) -c $<
+
+lexer.o: lexer.c lexer.h
+	$(CC) $(CPPFLAGS) -c $<
+
+lexer.c: lexer.l
+	@$(RM) $@
+	flex -t $< > $@
+
+clean:
+	@$(RM) *.o words_count 
