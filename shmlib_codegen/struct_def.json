@@ -1,0 +1,69 @@
+{
+  "ReflibInterface": "reflib_pbu",
+  "MemName": "SHM_PBU_TEST",
+  "MemTableName": "SHM_REF_PBU_TEST_TBL",
+  "MemKeyField": "szMstrPBUID",
+  "MemRecordMaxNum": 100000,
+  "MemStructName": "RmReflibPBUT",
+  "MemStructFields": [
+    {
+      "Name": "szPBUID",
+      "Type": "char",
+      "Length": 8,
+      "LenMacro": "PBU_ID_LEN",
+      "Message": "PBU唯一标识"
+    },
+    {
+      "Name": "cPBUClassInd",
+      "Type": "char",
+      "Length": 1,
+      "LenMacro": "",
+      "Message": "所内所外PBU标记"
+    },
+    {
+      "Name": "szMstrPBUID",
+      "Type": "char",
+      "Length": 8,
+      "LenMacro": "PBU_ID_LEN",
+      "Message": "主PBU唯一标识"
+    },
+    {
+      "Name": "szSettlPBUID",
+      "Type": "char",
+      "Length": 8,
+      "LenMacro": "PBU_ID_LEN",
+      "Message": "结算PBU唯一标识"
+    },
+    {
+      "Name": "iFlowVelctyValu",
+      "Type": "int32_t",
+      "Length": 4,
+      "LenMacro": "",
+      "Message": "最近更新时间"
+    },
+    {
+      "Name": "szMembID",
+      "Type": "char",
+      "Length": 12,
+      "LenMacro": "MEM_ID_LEN",
+      "Message": "一掌打出，方圆百里之内，人畜虾蟹跳骚全都化为飞灰啊！"
+    },
+    {
+      "Name": "szHjiang",
+      "Type": "char",
+      "Length": 15,
+      "LenMacro": "HJIANG_ID_LEN",
+      "Message": "一掌K出，方圆百里之内，人畜虾蟹跳骚全都化为飞灰啊！"
+    }
+  ],
+  "FileInfos": {
+    "BftType": "BFT_TXT",
+    "BfeType": "BFE_UNIX",
+    "Encoding": "BFC_UTF8",
+    "DirPath": "in/yyyymmdd",
+    "Name": "se030zycpyyyymmdd001.txt",
+    "PathDateFlag": "A+0",
+    "NameDateFlag": "A+0"
+  },
+  "Author": "hjiang"
+}
