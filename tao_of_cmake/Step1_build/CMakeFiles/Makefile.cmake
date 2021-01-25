@@ -7,8 +7,9 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/pi/WanderLand/tao_of_cmake/Step1/CMakeLists.txt"
-  "/home/pi/WanderLand/tao_of_cmake/Step1/TutorialConfig.h.in"
+  "/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1/CMakeLists.txt"
+  "/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1/MathFunctions/CMakeLists.txt"
+  "/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1/TutorialConfig.h.in"
   "CMakeFiles/3.13.4/CMakeCCompiler.cmake"
   "CMakeFiles/3.13.4/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.13.4/CMakeSystem.cmake"
@@ -113,9 +114,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.13.4/CMakeCXXCompiler.cmake"
   "TutorialConfig.h"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "MathFunctions/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Tutorial.dir/DependInfo.cmake"
+  "MathFunctions/CMakeFiles/MathFunctions.dir/DependInfo.cmake"
   )

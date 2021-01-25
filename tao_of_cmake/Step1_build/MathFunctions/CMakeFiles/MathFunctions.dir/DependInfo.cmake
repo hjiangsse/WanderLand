@@ -4,19 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1/tutorial.cxx" "/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1_build/CMakeFiles/Tutorial.dir/tutorial.cxx.o"
+  "/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1/MathFunctions/mysqrt.cxx" "/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1_build/MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "."
-  "/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1/MathFunctions"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1_build/MathFunctions/CMakeFiles/MathFunctions.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

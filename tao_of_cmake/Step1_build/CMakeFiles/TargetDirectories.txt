@@ -1,3 +1,6 @@
-/home/pi/WanderLand/tao_of_cmake/Step1_build/CMakeFiles/rebuild_cache.dir
-/home/pi/WanderLand/tao_of_cmake/Step1_build/CMakeFiles/Tutorial.dir
-/home/pi/WanderLand/tao_of_cmake/Step1_build/CMakeFiles/edit_cache.dir
+/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1_build/CMakeFiles/rebuild_cache.dir
+/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1_build/CMakeFiles/Tutorial.dir
+/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1_build/CMakeFiles/edit_cache.dir
+/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1_build/MathFunctions/CMakeFiles/rebuild_cache.dir
+/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1_build/MathFunctions/CMakeFiles/MathFunctions.dir
+/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1_build/MathFunctions/CMakeFiles/edit_cache.dir

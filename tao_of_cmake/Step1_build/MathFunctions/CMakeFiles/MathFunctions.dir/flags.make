@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1_build -I/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1/MathFunctions 
+CXX_INCLUDES = 
 
