@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pi/WanderLand/tao_of_cmake/Step1/tutorial.cxx
+iostream
+-
+TutorialConfig.h
+/home/pi/WanderLand/tao_of_cmake/Step1/TutorialConfig.h
+
+TutorialConfig.h
+
