@@ -1,0 +1,57 @@
+\documentclass{beamer}
+\usepackage{CJKutf8}
+\usepackage[utf8]{inputenc}
+
+\title[About Coding] %optional
+{\huge Tell something about coding!}
+\subtitle{-- an pragmatic way}
+\author[hjiang] % (optional, for multiple authors)
+{Heng Jiang\inst{1}}
+\institute[VFU] % (optional)
+{
+  \inst{1}%
+  Department of Exchange Development\\
+  Shanghai Stock Exchange
+}
+\date[COD 2021]
+{2021/1/26}
+\logo{\includegraphics[height=1.5cm]{lion_logo.jpg}}
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+\begin{document}
+
+\frame{\titlepage}
+
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+
+\section{First Section}
+
+\begin{frame}
+\frametitle{DRY}
+Don not repeat yourself!
+\begin{itemize}
+    \item<1-> Imposed Duplication            
+    \item<2-> Inadvertent Duplication        %大意失荆州
+    \item<3-> Impatient Duplication          %心急吃不了热豆腐
+    \item<4-> Inter-developer Duplication    %你的心思他不懂  
+\end{itemize}
+\end{frame}
+
+\section{Second section}
+
+\begin{frame}
+\frametitle{Broken Window}
+Never make your window broken! \\
+If find one black hole, just fix it!
+\end{frame}
+\end{document}
