@@ -12,6 +12,15 @@ public:
   Triangular(int len = 1, int bp = 1);
   
   typedef Triangular_iterator iterator;
+
+  Triangular_iterator begin() const {
+	return Triangular_iterator(_beg_pos);
+  }
+
+  Triangular_iterator end() const {
+	return Triangular_iterator(_beg_pos + _length);
+  }
+  
   friend int Triangular_iterator::operator*() const;
   friend void Triangular_iterator::check_integrity() const;
 
@@ -20,15 +29,17 @@ public:
   int elem(int pos) const;
 
   bool next(int &val);
-  void next_reset() const { _next = _beg_pos - 1; }
+  void next_reset() { _next = _beg_pos - 1; }
 public:
+  static bool is_elem(int value);
   static void gen_elements(int length);
+  static void gen_elems_to_value(int value);
 private:
-  int _max_elems;
   int _length;
   int _beg_pos;
-  
-  mutable int _next;
+  int _next;
+
+  static const int _max_elems = 1024;
   static vector<int> _elems;
 };
 
