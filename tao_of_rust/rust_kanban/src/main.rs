@@ -1,4 +1,24 @@
 use calamine::{open_workbook, Error, RangeDeserializerBuilder, Reader, Xlsx};
+use structopt::StructOpt;
+
+#[derive(Debug, StructOpt)]
+struct Opt {
+    #[structopt(
+        short = "c",
+        long = "config",
+        default_value = "~/.fastfile.toml",
+        help = "the config file path"
+    )]
+    config: String,
+
+    #[structopt(
+        short = "n",
+        long = "filename",
+        default_value = "cpp",
+        help = "the default file name you want to send of download"
+    )]
+    filename: String,
+}
 
 fn example() -> Result<(), Error> {
     let path = format!("test.xlsx");
@@ -14,6 +34,9 @@ fn example() -> Result<(), Error> {
         println!("{:?}", label);
         println!("{:?}", value1);
         println!("{:?}", value2);
+        if label.eq("导航") {
+            println!("This is a test!");
+        }
     }
 
     if let Some(result1) = iter.next() {
@@ -28,5 +51,7 @@ fn example() -> Result<(), Error> {
 }
 
 fn main() {
-    example();
+    let opt = Opt::from_args();
+    println!("The file is: {:?}", opt.filename);
+    //example();
 }
