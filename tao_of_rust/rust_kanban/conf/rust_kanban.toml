@@ -1,0 +1,2 @@
+state_column_index = 3
+state_queue = ["Backlog", "Processing", "Next", "Vison", "Finish"]

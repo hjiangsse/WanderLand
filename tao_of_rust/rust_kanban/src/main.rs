@@ -1,24 +1,7 @@
-use calamine::{open_workbook, Error, RangeDeserializerBuilder, Reader, Xlsx};
-use structopt::StructOpt;
+mod load_config;
+mod proc_args;
 
-#[derive(Debug, StructOpt)]
-struct Opt {
-    #[structopt(
-        short = "c",
-        long = "config",
-        default_value = "~/.fastfile.toml",
-        help = "the config file path"
-    )]
-    config: String,
-
-    #[structopt(
-        short = "n",
-        long = "filename",
-        default_value = "cpp",
-        help = "the default file name you want to send of download"
-    )]
-    filename: String,
-}
+use calamine::{open_workbook, Error, RangeDeserializer, RangeDeserializerBuilder, Reader, Xlsx};
 
 fn example() -> Result<(), Error> {
     let path = format!("test.xlsx");
@@ -50,8 +33,19 @@ fn example() -> Result<(), Error> {
     }
 }
 
+fn get_workbook_range_iter(xlsx_file: &str) /* RangeDeserializer*/
+{
+    let path = format!("test.xlsx");
+    let mut workbook: Xlsx<_> = open_workbook(path).unwrap();
+    let range = workbook.worksheet_range("Sheet1").unwrap().unwrap();
+}
+
 fn main() {
-    let opt = Opt::from_args();
-    println!("The file is: {:?}", opt.filename);
+    //let opt = Opt::from_args();
     //example();
+    let conf = load_config::load_config("./conf/rust_kanban.toml");
+    println!("{:?}", conf);
+
+    let opt = proc_args::Opt::from_args();
+    println!("{:?}", opt);
 }
