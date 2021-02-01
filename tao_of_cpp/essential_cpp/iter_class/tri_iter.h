@@ -15,8 +15,10 @@ public:
   bool operator==(const Triangular_iterator& ) const;
   bool operator!=(const Triangular_iterator& ) const;
   int operator*() const;
+  
   Triangular_iterator& operator++();     //prefix++
   Triangular_iterator operator++(int);   //posfix++
+  
   void check_integrity() const;
 private:
   int _index;

@@ -1,9 +1,0 @@
-#include <iostream>
-#include "tri.h"
-#include "tri_iter.h"
-
-using namesspace std;
-
-int main(int argc, char **argv) {
-  return 0;
-}
