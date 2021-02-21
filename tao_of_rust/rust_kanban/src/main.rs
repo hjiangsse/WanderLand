@@ -2,7 +2,7 @@ mod load_config;
 mod proc_args;
 
 use calamine::{open_workbook, Error, RangeDeserializer, RangeDeserializerBuilder, Reader, Xlsx};
-
+XS
 fn example() -> Result<(), Error> {
     let path = format!("test.xlsx");
     let mut workbook: Xlsx<_> = open_workbook(path)?;
