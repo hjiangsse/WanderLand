@@ -25,5 +25,7 @@ int main(int argc, char **argv) {
     const double outputValue = sqrt(inputValue);
 #endif
     cout << "The outputValue is: " << outputValue << endl;
+    cout << "Bye!" << endl;
+    return 0;
 }
 

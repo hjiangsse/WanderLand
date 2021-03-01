@@ -15,7 +15,8 @@ if(USE_MYMATH)
     #add the MathFunctions library
     add_subdirectory(MathFunctions)
     list(APPEND EXTRA_LIBS MathFunctions)
-    list(APPEND EXTRA_INCLUDES "${PROJECT_SOURCE_DIR}/MathFunctions")
+    message(STATUS "project source dir: ${PROJECT_SOURCE_DIR}")
+    #list(APPEND EXTRA_INCLUDES "${PROJECT_SOURCE_DIR}/MathFunctions")
 endif()
 
 add_executable(Tutorial tutorial.cxx)
@@ -23,7 +24,11 @@ target_link_libraries(Tutorial PUBLIC ${EXTRA_LIBS})
 
 target_include_directories(Tutorial PUBLIC
                           "${PROJECT_BINARY_DIR}"
-                          "${EXTRA_INCLUDES}"
+                          #"${EXTRA_INCLUDES}"
                           )
 
-
+#install executable file and source file
+install(TARGETS Tutorial DESTINATION bin)
+install(FILES "${PROJECT_BINARY_DIR}/TutorialConfig.h"
+  DESTINATION include
+  )

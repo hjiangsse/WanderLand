@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/bpc/bpc_33/worklab/test_cmake/step1/MathFunctions/mysqrt.cxx" "/bpc/bpc_33/worklab/test_cmake/step1/build/MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.o"
+  "/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1/MathFunctions/mysqrt.cxx" "/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1/build/MathFunctions/CMakeFiles/MathFunctions.dir/mysqrt.cxx.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

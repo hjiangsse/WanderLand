@@ -4,18 +4,19 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/bpc/bpc_33/worklab/test_cmake/step1/tutorial.cxx" "/bpc/bpc_33/worklab/test_cmake/step1/build/CMakeFiles/Tutorial.dir/tutorial.cxx.o"
+  "/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1/tutorial.cxx" "/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1/build/CMakeFiles/Tutorial.dir/tutorial.cxx.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "."
-  "../"
+  "../MathFunctions"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/pi/GitSpace/WanderLand/tao_of_cmake/Step1/build/MathFunctions/CMakeFiles/MathFunctions.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

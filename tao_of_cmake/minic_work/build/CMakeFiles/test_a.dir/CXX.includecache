@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/reflib/reflib_a.h
+
+/home/pi/GitSpace/WanderLand/tao_of_cmake/minic_work/src/app_generic/test_a.cxx
+iostream
+-
+reflib_a.h
+/home/pi/GitSpace/WanderLand/tao_of_cmake/minic_work/src/app_generic/reflib_a.h
+

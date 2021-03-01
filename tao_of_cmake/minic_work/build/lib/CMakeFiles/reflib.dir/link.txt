@@ -1,0 +1,2 @@
+/usr/bin/ar qc libreflib.a  CMakeFiles/reflib.dir/reflib/reflib_a.cxx.o CMakeFiles/reflib.dir/reflib/reflib_b.cxx.o CMakeFiles/reflib.dir/reflib/reflib_c.cxx.o
+/usr/bin/ranlib libreflib.a

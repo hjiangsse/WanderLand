@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/test_a.dir/src/app_generic/test_a.cxx.o  -o test_a lib/libreflib.a 
