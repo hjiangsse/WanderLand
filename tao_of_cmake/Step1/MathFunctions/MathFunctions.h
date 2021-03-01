@@ -1,1 +1,1 @@
-double mysqrt(int arg);
+double mysqrt(double val);

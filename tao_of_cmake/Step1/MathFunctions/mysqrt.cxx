@@ -1,6 +1,5 @@
 #include "MathFunctions.h"
 
-double mysqrt(int arg)
-{
-    return 1.0;
+double mysqrt(double val) {
+    return val;
 }

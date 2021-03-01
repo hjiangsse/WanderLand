@@ -1,0 +1,3 @@
+/bpc/bpc_33/worklab/test_cmake/step1/build/CMakeFiles/edit_cache.dir
+/bpc/bpc_33/worklab/test_cmake/step1/build/CMakeFiles/rebuild_cache.dir
+/bpc/bpc_33/worklab/test_cmake/step1/build/CMakeFiles/Tutorial.dir

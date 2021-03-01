@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/bpc/bpc_33/worklab/test_cmake/step1/tutorial.cxx
+iostream
+-
+cstdlib
+-
+TutorialConfig.h
+/bpc/bpc_33/worklab/test_cmake/step1/TutorialConfig.h
+MathFunctions.h
+/bpc/bpc_33/worklab/test_cmake/step1/MathFunctions.h
+cmath
+-
+
+TutorialConfig.h
+
