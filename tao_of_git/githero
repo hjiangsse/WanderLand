@@ -21,6 +21,7 @@ function add_item_to_gitignore () {
     if [[ -f .gitignore ]]; then
 	echo $1 >> .gitignore
     else
+	touch .gitignore
 	echo $1 > .gitignore
     fi
 }
@@ -37,7 +38,7 @@ function rm_item_in_gitignore () {
     fi
 }
 
-optstr=":h:a:d:p"
+optstr="ha:d:p"
 
 while getopts ${optstr} arg; do
     case ${arg} in
@@ -47,7 +48,7 @@ while getopts ${optstr} arg; do
 	    ;;
 	a)
 	    echo "Adding item ${2} to .gitignore file"
-	    rm_item_in_gitignore $2
+	    add_item_to_gitignore $2
 	    exit 0
 	    ;;
 	d)
@@ -63,6 +64,7 @@ while getopts ${optstr} arg; do
 	    else
 		git commit -m $2
 	    fi
+	    git config --global credentail.helper 'cache --timeout 720000'
 	    git push
 	    exit 0
 	    ;;
