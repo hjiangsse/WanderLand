@@ -1,0 +1,35 @@
+#!/bin/bash
+
+function change_worker_to_qhmirror () {
+    node_list=(pi@node-2 pi@node-3 pi@node-4)
+
+    for i in "${node_list[@]}";
+    do
+        ssh -t "$i" sudo sed -i -e s/ports.ubuntu.com/mirrors.tuna.tsinghua.edu.cn/g /etc/apt/sources.list
+        ssh -t "$i" sudo apt-get update
+    done
+}
+
+function change_worker_to_nopasswd () {
+    ssh-keygen -t rsa
+    node_list=(pi@node-2 pi@node-3 pi@node-4)
+    
+    for i in "${node_list[@]}";
+    do
+	ssh "$i" mkdir -p .ssh
+	cat ~/.ssh/id_rsa.pub | ssh "$i" 'cat >> .ssh/authorized_keys'
+    done
+}
+
+function swap_caps_and_ctrl () {
+    node_list=(pi@node-2 pi@node-3 pi@node-4)
+
+    for i in "${node_list[@]}";
+    do
+	ssh -t "$i" setxkbmap -option "ctrl:swapcaps"
+    done
+}
+
+swap_caps_and_ctrl
+#change_worker_to_qhmirror
+
