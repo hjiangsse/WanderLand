@@ -20,7 +20,6 @@ fn main() {
         let x = 3;
         x + 1
     };
-    println!("the value of y is: {}", y);
-
+       println!("the value of y is: {}", y);
     println!("the return value of the just_five: {}", just_five());
 }

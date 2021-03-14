@@ -1,4 +1,4 @@
-const MAX_LEN: u32 = 1000_000;
+Const MAX_LEN: u32 = 1000_000;
 
 fn get_type<T>(_: &T) {
     println!("{}", std::any::type_name::<T>())

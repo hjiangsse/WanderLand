@@ -1,0 +1,23 @@
+#!/bin/bash
+#用最新的shadowsocks主机地址，替换/etc/shadowsocks.json中的ip地址
+hostname=c16s1.jamjams.net
+
+newip=$(nslookup ${hostname} | tail -n 2 | head -n 1 | cut -d" " -f 2)
+oldip=$(cat /etc/shadowsocks.json | grep \"server\" | cut -d"\"" -f 4)
+
+echo "-----------old config---------------"
+cat /etc/shadowsocks.json
+echo "-----------old config---------------"
+
+sed "s/${oldip}/${newip}/g" /etc/shadowsocks.json > newssconf.json
+sudo mv newssconf.json /etc/shadowsocks.json
+
+echo "-----------new config---------------"
+cat /etc/shadowsocks.json
+echo "-----------new config---------------"
+
+#restart sslocal.service
+sudo systemctl restart sslocal
+
+
+

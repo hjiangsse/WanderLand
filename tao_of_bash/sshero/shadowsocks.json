@@ -1,0 +1,9 @@
+{
+    "server":"96.45.185.251",
+    "server_port":37538,
+    "local_address": "127.0.0.1",
+    "local_port":1090,
+    "password":"DhLEWbAePb",
+    "timeout":600,
+    "method":"aes-256-gcm"
+}
